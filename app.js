@@ -15,6 +15,15 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
+app.get("/about", function(req, res) {
+    res.render("about");
+});
+
+app.get("/support", function(req, res) {
+    res.render("support");
+});
+
+
 app.listen("3000", function() {
     console.log("Server is ready to work on port 3000");
 });
